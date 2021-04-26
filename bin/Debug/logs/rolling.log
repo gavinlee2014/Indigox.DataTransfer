@@ -1,0 +1,52 @@
+﻿[2021-04-13 20:11:49.909][Indigox.DataTransfer.DataTransfer] receive from session 127.0.0.1:52975 command:LIST message:
+
+[2021-04-13 20:11:49.912][Indigox.DataTransfer.DataTransfer] send message to session 127.0.0.1:52975 command:LIST_R message:8274982a-351b-46c5-bb0c-6cd80f6708a1 
+
+[2021-04-13 20:11:49.920][Indigox.DataTransfer.DataTransfer] encoded response to session 127.0.0.1:52975 body:ODI3NDk4MmEtMzUxYi00NmM1LWJiMGMtNmNkODBmNjcwOGExIA==
+
+[2021-04-13 22:00:55.641][Indigox.DataTransfer.DataTransfer] session close 127.0.0.1:52975 of reason SocketError
+
+[2021-04-13 22:32:59.860][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-13 22:33:04.203][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-13 23:37:52.581][Indigox.DataTransfer.DataTransfer] server stopped
+
+[2021-04-16 14:10:41.315][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-16 14:10:43.756][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-16 14:43:55.691][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-16 14:43:57.115][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-16 15:38:07.200][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-16 15:38:08.801][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-16 17:14:14.253][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-16 17:14:16.280][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-16 17:55:40.003][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-16 17:55:42.929][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-20 17:46:09.316][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-20 17:46:11.424][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-22 12:48:19.254][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-22 12:48:22.257][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-22 17:42:57.186][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-22 17:42:59.894][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-23 14:16:40.821][Indigox.DataTransfer.DataTransfer] DataTransfer init
+
+[2021-04-23 14:16:42.229][Indigox.DataTransfer.DataTransfer] server started at port 2021
+
+[2021-04-26 14:54:27.573][Indigox.DataTransfer.DataTransfer] server stopped
+

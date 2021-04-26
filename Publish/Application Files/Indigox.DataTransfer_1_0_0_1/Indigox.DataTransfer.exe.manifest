@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Indigox.DataTransfer.exe" version="1.0.0.1" publicKeyToken="34a631d034ca390e" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Indigox.DataTransfer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Indigox.DataTransfer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indigox.Common.Database.dll" size="56320">
+      <assemblyIdentity name="Indigox.Common.Database" version="1.0.0.0" publicKeyToken="F26306EADB8DB009" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Hil9MOecodnXNQ9mK3cZPk+HT1/0Ni9frrKhn0AO8jc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indigox.Common.Logging.dll" size="16384">
+      <assemblyIdentity name="Indigox.Common.Logging" version="1.0.0.0" publicKeyToken="F8B790F9C7DE8B3D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sOoPQaaG1Qhm4OotvLtyAuqWzf/UozVAgONqrMHooQc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Indigox.DataTransfer.exe" size="13784">
+      <assemblyIdentity name="Indigox.DataTransfer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yX7cW0kWreUs8B1ZSifOAV0C5//l6wbp/nLUMJLpmYI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="log4net.dll" size="270336">
+      <assemblyIdentity name="log4net" version="2.0.12.0" publicKeyToken="669E0DDF0BB1AA2A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iWq5ysQeOXd5K6IDTqhzBhDCd5+lG6tr7UJglOqNPs0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.Common.dll" size="40448">
+      <assemblyIdentity name="SuperSocket.Common" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZFZ9be2eK8lrpPhNb0WRoz1RZw5+zsqKBdayCLgtkOM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.Facility.dll" size="18944">
+      <assemblyIdentity name="SuperSocket.Facility" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6nJAnGoHK8zK6t3eucK3w97azOZeWYU49kgANEHtWj0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.SocketBase.dll" size="115200">
+      <assemblyIdentity name="SuperSocket.SocketBase" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DrpD8Mg80UkrRJ9tvNaMXOCU1ddUc20r6BHSvpZ+weQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.SocketEngine.dll" size="113152">
+      <assemblyIdentity name="SuperSocket.SocketEngine" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mhmZzMoq/5yCJUlAs/UoScR58YfWQThdRZgfU/owNYc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperSocket.SocketService.exe" size="17408">
+      <assemblyIdentity name="SuperSocket.SocketService" version="1.6.6.1" publicKeyToken="6C80000676988EBB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8w48d+ZrgT22Euu77T9QcSpb0+QiViTGScr7WEbCIb4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zxing.dll" size="483840">
+      <assemblyIdentity name="zxing" version="0.16.6.0" publicKeyToken="4E88037AC681FE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UOCD/BKToTgOBae63+DannVBAfZoAyGTJJIl3ZV1sGA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zxing.presentation.dll" size="19968">
+      <assemblyIdentity name="zxing.presentation" version="0.16.6.0" publicKeyToken="4E88037AC681FE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rHyHf1vA9vmW0XnUjgbItyIb8O2TWWWW+FCgwey7IGs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Indigox.DataTransfer.exe.config" size="1168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ko9bzgnuEcARDUMDyWb3Jsnn2VJ7ksC0udc5N+Wp91E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="log4net.config" size="2046">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X5bmzgergEUZzXF8QcyJRD/URtsb/gXp0bJ9iZ2j6pE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-FCS6LPQ\Dev" issuerKeyHash="544a24ffe71680f9a337f87f0be4a9fe94d12094" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>FwOETaF5/c6YlX8abXV1QTM24wmFKyqcKbxg1410RQQ=</DigestValue></Reference></SignedInfo><SignatureValue>OYd9CsL0e8qxYkt5ufkywuN+lc8L+w2JTQUYMkuHzp1e2dd3BcqYndK/gdkT2ITpY5bQ0fsf+KytH1TFRf/2UZx5uZzqPnJ95c7buTY27T6v9ahlMEK4Z2qzsW+j4obDs8F6HwNlppqkGoTkuZl2ZLEMc9/7S1Wx6Vw8KMmH1Jg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xAaFhei1pcQYrkuD3XfO8lM4bgU3MW7nKXPRDhLX9IT6YBPwwzNXjVc+x7795pamjYFobJEDDlLE10FuEBJyNz+mU30Y99SZQ03gZinNkM5C2MFDQuPvXgSi5cobOEKQtxyglWrdUDrSTcl4dJV2Foi47DrMTnL+alIMzqfEElE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0445748dd760bc299c2a2b8509e336334175756d1a7f9598cefd79a14d840317" Description="" Url=""><as:assemblyIdentity name="Indigox.DataTransfer.exe" version="1.0.0.1" publicKeyToken="34a631d034ca390e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-FCS6LPQ\Dev</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kdkxXsI84ckQqnmva9w+wnjByG35MXDezTOPqqXorsI=</DigestValue></Reference></SignedInfo><SignatureValue>Qr5/1OfpHVMVVEzglJn4jnOX82oNvEsVWL7XZ3vx4kqzGAg9p7MRn8dZnOlICg0/ugO5FSALssz7+UNSj86kUKm++8QG890gQppAuJ1wufBw9GEPVjOIeJKR3jG3BWcZCBpoKypxJEzzHisPogU9Ij6ZWYW7VuHprKJKVFLewGM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xAaFhei1pcQYrkuD3XfO8lM4bgU3MW7nKXPRDhLX9IT6YBPwwzNXjVc+x7795pamjYFobJEDDlLE10FuEBJyNz+mU30Y99SZQ03gZinNkM5C2MFDQuPvXgSi5cobOEKQtxyglWrdUDrSTcl4dJV2Foi47DrMTnL+alIMzqfEElE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQFXxOegwg8oRNRuvj9U2z2DANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYARABFAFMASwBUAE8AUAAtAEYAQwBTADYATABQAFEAXABEAGUAdjAeFw0yMTAzMjExNjA2MDFaFw0yMjAzMjEyMjA2MDFaMDExLzAtBgNVBAMeJgBEAEUAUwBLAFQATwBQAC0ARgBDAFMANgBMAFAAUQBcAEQAZQB2MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEBoWF6LWlxBiuS4Pdd87yUzhuBTcxbucpc9EOEtf0hPpgE/DDM1eNVz7Hvv3mlqaNgWhskQMOUsTXQW4QEnI3P6ZTfRj31JlDTeBmKc2QzkLYwUNC4+9eBKLlyhs4QpC3HKCVat1QOtJNyXh0lXYWiLjsOsxOcv5qUgzOp8QSUQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIat9khb3g8+Pe/p8UQCC5uhaQEtmPf7C0NozPhMv8HkWoqEfVuPbggpcKIE6cA+zvjI+1TsS+QT4lNCZyX1tC2G6xbFaH/FltWnM7FiQghFp6YBY/iyaTBwJ7Gu94VivrCVawVxNy539Hu1CJSIfB8uzwc+Vi5oodFpJDc/0PNi</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

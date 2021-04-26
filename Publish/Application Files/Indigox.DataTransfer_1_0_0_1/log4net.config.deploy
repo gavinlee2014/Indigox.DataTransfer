@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler" />
+  </configSections>
+  <log4net>
+    <root>
+      <level value="ALL" />
+    </root>
+
+    <logger name="Indigox" additivity="false">
+      <level value="ERROR" />
+      <appender-ref ref="ErrorRollingFileAppender" />
+    </logger>
+
+    <!-- Debugger -->
+
+    <logger name="Indigox.DataTransfer">
+      <level value="DEBUG" />
+      <appender-ref ref="DebugRollingFileAppender" />
+    </logger>
+
+
+    <appender name="DebugRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="logs\rolling.log"/>
+      <encoding value="UTF-8" />
+      <!--是否在文件中追加-->
+      <appendToFile value="true"/>
+      <!--按照文件的大小进行变换日志文件-->
+      <rollingStyle value="Size"/>
+      <!--最大变换数量-->
+      <maxSizeRollBackups value="10"/>
+      <!--最大文件大小-->
+      <maximumFileSize value="100KB"/>
+      <!--日志文件名是否为静态-->
+      <staticLogFileName value="true" />
+      <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+      <threshold value="DEBUG" />
+      <layout type="Indigox.Common.Logging.Log4net.Layout.LogEntryLayout">
+        <conversionPattern value="[%d] %t%n%n" />
+      </layout>
+    </appender>
+    <appender name="ErrorRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="logs\error.log"/>
+      <encoding value="UTF-8" />
+      <appendToFile value="true" />
+      <staticLogFileName value="true" />
+      <rollingStyle value="Date" />
+      <datePattern value=" yyyy-MM-dd" />
+      <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+      <threshold value="ERROR" />
+      <layout type="Indigox.Common.Logging.Log4net.Layout.LogEntryLayout">
+        <conversionPattern value="[%d] %t%n%n" />
+      </layout>
+    </appender>
+
+  </log4net>
+</configuration>
