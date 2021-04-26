@@ -1,4 +1,6 @@
 bin/
 obj/
 .vs/
+Publish/
 Indigox.DataTransfer.csproj.user
+packages/
