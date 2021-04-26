@@ -1,1 +1,4 @@
 bin/
+obj/
+.vs/
+Indigox.DataTransfer.csproj.user
