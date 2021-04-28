@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Indigox.Common.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,14 @@ namespace Indigox.DataTransfer.Database
             string origin = "";
             if (!String.IsNullOrEmpty(encoded))
             {
-                origin = Encoding.UTF8.GetString(Convert.FromBase64String(encoded));
+                try
+                {
+                    origin = Encoding.UTF8.GetString(Convert.FromBase64String(encoded));
+                }
+                catch (Exception)
+                {
+                    Log.Debug("decode fail " + encoded);
+                }
             }
             return origin;
         }
@@ -22,7 +30,7 @@ namespace Indigox.DataTransfer.Database
         public static void UpdateUserPassword(string accountName, string pwd)
         {
             string encoded = Convert.ToBase64String(Encoding.UTF8.GetBytes(pwd));
-            Module.Db.ExecuteText("UPDATE Users SET AccountPassword='" + pwd + "' WHERE AccountName='" + encoded + "'");
+            Module.Db.ExecuteText("UPDATE Users SET AccountPassword='" + encoded + "' WHERE AccountName='" + accountName + "'");
         }
     }
 }

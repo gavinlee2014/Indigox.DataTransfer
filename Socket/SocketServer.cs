@@ -208,7 +208,9 @@ namespace Indigox.DataTransfer.Socket
                 return;
             }
             string userName = parameters[0];
+
             string pwd = parameters[1];
+            Log.Debug("parameters[0] " + userName + " parameters[1] " + pwd);
             DBUtil.UpdateUserPassword(userName, pwd);
         }
         private string BuildBase64Response(string message)
